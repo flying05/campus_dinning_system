@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="home-container">
+        <h1>欢迎来到校园餐饮信息查询系统</h1>
+        <p>当前用户: {{ session.username }}</p>
+        <a href="/logout">退出登录</a>
+    </div>
+</body>
+</html>
